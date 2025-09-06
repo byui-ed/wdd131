@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 131 – Dynamic Web Fundamentals – Your Name</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals by Your Name. A course homepage demonstrating HTML, CSS, and JavaScript concepts." />
+    <meta name="author" content="Otu Godwin Otu" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&display=swap" rel="stylesheet" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles/base.css" />
+    <!-- JavaScript for dynamic dates -->
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - Otu Godwin</h1>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a></li>
+                <li><a href="your-final-project-link.html" target="_blank">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Your Name</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/about-me.jpg" alt="Your Photo" />
+            <p>My name is Otu, I am a Nigerian.</p>
+        </section>
+        <section class="card">
+            <h2>My Interests</h2>
+            <img src="images/interests.jpg" alt="Your Interests" />
+            <p>Description of your hobbies, passions, or interests. Replace with your own content.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Your Name. Your State or Country.</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
