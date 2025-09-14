@@ -1,0 +1,10 @@
+/* Larger screen styles */
+
+main {
+  max-width: 1000px;
+}
+
+/* Grid layout for larger screens */
+.grid-container {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}

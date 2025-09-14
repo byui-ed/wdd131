@@ -47,7 +47,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #005bb5;
+    background-color: #071b91;
     color: #fff;
 }
 
@@ -73,7 +73,7 @@ main {
 .card h2 {
     grid-column: 1 / -1;
     margin-bottom: 10px;
-    color: #0073e6;
+    color: #184879;
 }
 
 .card img {
@@ -84,11 +84,11 @@ main {
 
 /* Footer Styles */
 footer {
-    background-color: #222;
-    color: #ddd;
+    background-color: #0b539b;
     padding: 15px;
     margin-top: 40px;
     text-align: center;
+    color: #fff;
 }
 
 #lastModified {
