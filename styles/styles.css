@@ -1,0 +1,63 @@
+/* Global CSS Variables */
+:root {
+  --primary-color: #006400; /* Dark green, like a country's flag color */
+  --accent-color: #228B22; /* Forest green for accents */
+  --background-color: #F0F8FF; /* Light sky blue background */
+  --font-family: 'Arial', sans-serif;
+}
+
+/* Reset & Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  line-height: 1.6;
+  background-color: var(--background-color);
+  color: #333;
+}
+
+/* Header Hero Image */
+header {
+  width: 100%;
+  overflow: hidden;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Main Content Styles */
+main {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Sections */
+section {
+  margin-bottom: 2rem;
+}
+
+h1, h2 {
+  color: var(--primary-color);
+}
+
+h2::after {
+  content: '⛅'; /* Static weather icon for large view */
+  font-size: 2rem;
+  margin-left: 0.5em;
+}
+
+/* Weather details styling */
+.weather-details p {
+  margin: 0.5em 0;
+}
+
+/* Responsive Design with Media Queries */
+@media (max-width: 767px) {
+  h2::after {
+    content: ''; /* Remove icon on small screens if needed */
+  }
+}
