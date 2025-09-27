@@ -1,0 +1,214 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: #4a90e2;
+  position: relative;
+}
+
+/* Title */
+header h1 {
+  color: white;
+  font-size: 1.5em;
+}
+
+/* Hamburger button styles */
+#menu-toggle {
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hide menu toggle on larger screens */
+@media screen and (min-width: 768px) {
+  #menu-toggle {
+    display: none;
+  }
+}
+
+/* Navigation styles */
+#main-nav {
+  position: absolute;
+  top: 100%;
+  right: 1em;
+  background-color: #4a90e2;
+  display: none; /* Hidden by default on mobile */
+  width: 150px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#main-nav ul {
+  list-style: none;
+}
+
+#main-nav li {
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+#main-nav li:last-child {
+  border-bottom: none;
+}
+
+#main-nav a {
+  display: block;
+  padding: 0.75em 1em;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+#main-nav a:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+/* Show menu when active (via JS) */
+#main-nav.show {
+  display: block;
+}
+
+/* Main styles */
+main {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+/* Grid layout for figures */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+
+/* Figure styles */
+figure {
+  margin: 0;
+  background: white;
+  padding: 0.5em;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+figcaption {
+  margin-top: 0.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Sansita", sans-serif;
+}
+
+/* mobile **************************/
+header {
+	background-color: #bbb;
+	display: grid;
+	grid-gap: 1rem;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 30px #333;
+}
+
+header,
+main {
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+nav {
+	background-color: #36454f;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: larger;
+}
+
+nav a:hover {
+	text-decoration: underline double;
+	background-color: #eee;
+	color: #000;
+}
+
+.active {
+	color: yellow;
+}
+
+/* Larger Views ******************************/
+@media (min-width: 740px) {
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	nav ul {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	nav a {
+		flex: 1 1 100%;
+	}
+}
