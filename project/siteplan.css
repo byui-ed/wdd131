@@ -1,0 +1,53 @@
+/* Basic Reset and Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #2e7d32; /* Primary color: Green */
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #2e7d32; /* Same as primary for consistency */
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Sections */
+section {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* List styles */
+ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+/* Links */
+a {
+  color: #0288d1; /* Accent color: Blue */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
